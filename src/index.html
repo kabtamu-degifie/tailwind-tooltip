@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooltip using tailwind only</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen">
+      <div class="flex flex-col gap-4">
+        <h1 class="font-bold text-2xl">Tooltip using a tailwindcss only</h1>
+        <div class="flex flex-wrap gap-6">
+          <span class="tooltip" data-text="Right tooltip - default">
+            <button class="p-2 bg-gray-400">Hover me</button>
+          </span>
+
+          <span class="tooltip left" data-text="Left tooltip">
+            <button class="p-2 bg-gray-400">Hover me</button>
+          </span>
+
+          <span class="tooltip top" data-text="Top tooltip">
+            <button class="p-2 bg-gray-400">Hover me</button>
+          </span>
+
+          <span class="tooltip bottom" data-text="Bottom tooltip">
+            <button class="p-2 bg-gray-400">Hover me</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
